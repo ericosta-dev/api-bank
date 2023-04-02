@@ -34,12 +34,23 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Apply the database migrations:
+4. Environment Configuration
+
+To set up the required environment variables for this project, create a `.env` file in the project root directory. This file will contain the necessary configurations for the Django settings and other services.
+
+Example of a `.env` file:
+
+```bash
+SECRET_KEY=mysecretkey
+DEBUG=True
+```
+
+5. Apply the database migrations:
 ```bash
 python manage.py migrate
 ```
 
-5. Run the development server:
+6. Run the development server:
 ```bash
 python manage.py runserver
 ```
